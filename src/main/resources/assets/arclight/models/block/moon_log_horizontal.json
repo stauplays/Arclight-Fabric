@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "arclight:block/moon_log_top",
+    "side": "arclight:block/moon_log_side"
+  }
+}

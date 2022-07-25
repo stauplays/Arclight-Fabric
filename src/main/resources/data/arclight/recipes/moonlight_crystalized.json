@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 600,
+  "experience": 1.5,
+  "ingredient": {
+    "item": "arclight:moonlight_jellyball"
+  },
+  "result": "arclight:moonlight_crystalized"
+}

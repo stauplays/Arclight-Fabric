@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "arclight:shadow_log",
+    "arclight:shadow_wood",
+    "arclight:stripped_shadow_log",
+    "arclight:stripped_shadow_wood"
+  ]
+}

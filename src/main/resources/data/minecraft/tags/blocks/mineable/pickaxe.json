@@ -1,0 +1,17 @@
+{
+  "values": [
+    "arclight:arclight_ore",
+    "arclight:arclight_block",
+    "arclight:jade_ore",
+    "arclight:moonlight_ore",
+    "arclight:cloudstone",
+    "arclight:cloudstone_brick",
+    "arclight:cloudstone_cobbled",
+    "arclight:cloudstone_wall",
+    "arclight:cloudstone_slab",
+    "arclight:cloudstone_stairs",
+    "arclight:cloudstone_brick_wall",
+    "arclight:cloudstone_brick_slab",
+    "arclight:cloudstone_brick_stairs"
+  ]
+}

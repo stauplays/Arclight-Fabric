@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "arclight:holyknight_chestplate"
+    },
+    "title": "Epic Paladins",
+    "description": "The Power of Holy Knight's!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "arclight:textures/block/arclight_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arclight:holyknight_chestplate",
+              "arclight:holyknight_helmet",
+              "arclight:holyknight_boots",
+              "arclight:holyknight_leggings"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

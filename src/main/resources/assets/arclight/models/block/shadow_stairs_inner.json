@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "arclight:block/shadow_planks",
+    "top": "arclight:block/shadow_planks",
+    "side": "arclight:block/shadow_planks"
+  }
+}

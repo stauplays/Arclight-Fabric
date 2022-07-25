@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "arclight:block/stripped_moon_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "arclight:block/stripped_moon_log"
+    },
+    "axis=z": {
+      "model": "arclight:block/stripped_moon_log_horizontal",
+      "x": 90
+    }
+  }
+}

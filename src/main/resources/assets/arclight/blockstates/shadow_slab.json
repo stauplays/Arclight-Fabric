@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "arclight:block/shadow_slab"
+    },
+    "type=double": {
+      "model": "arclight:block/shadow_block"
+    },
+    "type=top": {
+      "model": "arclight:block/shadow_slab_top"
+    }
+  }
+}

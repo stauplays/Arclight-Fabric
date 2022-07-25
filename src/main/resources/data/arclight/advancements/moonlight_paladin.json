@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "arclight:moonlight_chestplate"
+    },
+    "title": "Moonlight Paladin",
+    "description": "You are the next Moonlight Paladin!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arclight:holyknight_armor",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arclight:moonlight_chestplate",
+              "arclight:moonlight_helmet",
+              "arclight:moonlight_boots",
+              "arclight:moonlight_leggings"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

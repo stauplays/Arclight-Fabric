@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "arclight:angel_sword"
+    },
+    "title": "Moonlight Paladin",
+    "description": "Defeated the Angel!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arclight:halo",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arclight:angel_sword"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

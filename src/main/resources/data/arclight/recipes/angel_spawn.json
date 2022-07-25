@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "J": {
+      "item": "arclight:arclight_gem"
+    },
+    "A": {
+      "item": "arclight:arclight_ingot"
+    },
+    "N": {
+      "item": "arclight:arclight_core"
+    }
+  },
+  "pattern": [
+    "JAJ",
+    "ANA",
+    "JAJ"
+  ],
+  "result": {
+    "item": "arclight:angel_spawn"
+  }
+}

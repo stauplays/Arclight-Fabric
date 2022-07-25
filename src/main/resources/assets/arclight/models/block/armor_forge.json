@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "arclight:block/armor_forge_bottom",
+    "up": "arclight:block/armor_forge_top",
+    "east": "arclight:block/armor_forge_side",
+    "west": "arclight:block/armor_forge_side",
+    "north": "arclight:block/armor_forge_front",
+    "south": "arclight:block/armor_forge_front",
+    "particle": "arclight:block/armor_forge_front"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "arclight:block/moon_slab"
+    },
+    "type=double": {
+      "model": "arclight:block/moon_block"
+    },
+    "type=top": {
+      "model": "arclight:block/moon_slab_top"
+    }
+  }
+}

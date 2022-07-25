@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "arclight:block/cloudstone_brick",
+    "top": "arclight:block/cloudstone_brick",
+    "side": "arclight:block/cloudstone_brick"
+  }
+}

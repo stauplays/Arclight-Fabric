@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "arclight:block/moon_door_bottom",
+    "top": "arclight:block/moon_door_top"
+  }
+}

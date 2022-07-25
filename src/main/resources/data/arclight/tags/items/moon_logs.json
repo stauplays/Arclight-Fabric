@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "arclight:moon_log",
+    "arclight:moon_wood",
+    "arclight:stripped_moon_log",
+    "arclight:stripped_moon_wood"
+  ]
+}

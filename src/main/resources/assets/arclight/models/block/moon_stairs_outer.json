@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "arclight:block/moon_planks",
+    "top": "arclight:block/moon_planks",
+    "side": "arclight:block/moon_planks"
+  }
+}

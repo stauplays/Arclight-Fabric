@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "J": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "A": {
+      "item": "arclight:moonlight_ingot"
+    },
+    "N": {
+      "item": "arclight:arclight_core"
+    }
+  },
+  "pattern": [
+    "JAJ",
+    "ANA",
+    "JAJ"
+  ],
+  "result": {
+    "item": "arclight:moonlight_core"
+  }
+}

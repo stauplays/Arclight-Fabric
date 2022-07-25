@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "arclight:moonlight_crystalized"
+  },
+  "base": {
+    "item": "arclight:moonlight_crystalized"
+  },
+  "result": {
+    "item": "arclight:moonlight_crystal"
+  }
+}

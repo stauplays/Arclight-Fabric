@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "arclight:block/moon_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "arclight:block/moon_wood"
+    },
+    "axis=z": {
+      "model": "arclight:block/moon_wood",
+      "x": 90
+    }
+  }
+}

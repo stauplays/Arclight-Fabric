@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "arclight:jade_log",
+    "arclight:jade_wood",
+    "arclight:stripped_jade_log",
+    "arclight:stripped_jade_wood"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "arclight:arclight_chestplate"
+    },
+    "title": "Angel Sword",
+    "description": "You are the next Arclight Paladin!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "arclight:holyknight_armor",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arclight:arclight_chestplate",
+              "arclight:arclight_helmet",
+              "arclight:arclight_boots",
+              "arclight:arclight_leggings"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

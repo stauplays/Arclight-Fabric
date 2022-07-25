@@ -1,0 +1,28 @@
+{
+  "values": [
+    "arclight:moon_planks",
+    "#arclight:moon_logs",
+    "arclight:jade_planks",
+    "#arclight:jade_logs",
+    "arclight:shadow_planks",
+    "#arclight:shadow_logs",
+    "arclight:moon_fence",
+    "arclight:moon_fence_gate",
+    "arclight:moon_slab",
+    "arclight:moon_stairs",
+    "arclight:moon_door",
+    "arclight:moon_trapdoor",
+    "arclight:jade_fence",
+    "arclight:jade_fence_gate",
+    "arclight:jade_slab",
+    "arclight:jade_stairs",
+    "arclight:jade_door",
+    "arclight:jade_trapdoor",
+    "arclight:shadow_fence",
+    "arclight:shadow_fence_gate",
+    "arclight:shadow_slab",
+    "arclight:shadow_stairs",
+    "arclight:shadow_door",
+    "arclight:shadow_trapdoor"
+  ]
+}

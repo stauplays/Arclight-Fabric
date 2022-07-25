@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "arclight:block/jade_slab"
+    },
+    "type=double": {
+      "model": "arclight:block/jade_block"
+    },
+    "type=top": {
+      "model": "arclight:block/jade_slab_top"
+    }
+  }
+}
