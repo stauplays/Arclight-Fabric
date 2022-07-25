@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ModMixin {
 	@Inject(at = @At("HEAD"), method = "init()V")
 	private void init(CallbackInfo info) {
-		ArclightMod.LOGGER.info("This line is printed by an example mod mixin!");
+		ArclightMod.LOGGER.info("Arclight Mod Mixin!");
 	}
 }
