@@ -5,15 +5,15 @@ import net.verox.arclight.ArclightMod;
 import net.verox.arclight.item.ArclightArmorItem;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 
-public class MoonlightArmorModel extends AnimatedGeoModel<ArclightArmorItem> {
+public class ShadowArmorModel extends AnimatedGeoModel<ArclightArmorItem> {
     @Override
     public Identifier getModelResource(ArclightArmorItem object) {
-        return new Identifier(ArclightMod.MOD_ID, "geo/moonlight_armor.geo.json");
+        return new Identifier(ArclightMod.MOD_ID, "geo/shadow_armor.geo.json");
     }
 
     @Override
     public Identifier getTextureResource(ArclightArmorItem object) {
-        return new Identifier(ArclightMod.MOD_ID, "textures/models/armor/moonlight_armor_textures.png");
+        return new Identifier(ArclightMod.MOD_ID, "textures/models/armor/shadow_armor_textures.png");
     }
 
     @Override

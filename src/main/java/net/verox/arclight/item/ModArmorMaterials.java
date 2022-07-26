@@ -17,7 +17,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
             () -> {return Ingredient.ofItems(ModItems.ARCLIGHT_INGOT);
     }),
 
-    MOONLIGHT("moonlight", 50, new int[]{6, 10, 13, 6}, 25,
+    SHADOW("shadow", 50, new int[]{6, 10, 13, 6}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0F, 0.3F,
             () -> {return Ingredient.ofItems(ModItems.MOONLIGHT_INGOT);
             }),

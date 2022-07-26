@@ -49,10 +49,10 @@
   "item.arclight.holyknight_leggings": "Holy Knight Leggings",
   "item.arclight.holyknight_boots": "Holy Knight Boots",
 
-  "item.arclight.moonlight_helmet": "Moonlight Paladin Helmet",
-  "item.arclight.moonlight_chestplate": "Moonlight Paladin Chestplate",
-  "item.arclight.moonlight_leggings": "Moonlight Paladin Leggings",
-  "item.arclight.moonlight_boots": "Moonlight Paladin Boots",
+  "item.arclight.shadow_helmet": "Shadow Paladin Helmet",
+  "item.arclight.shadow_chestplate": "Shadow Paladin Chestplate",
+  "item.arclight.shadow_leggings": "Shadow Paladin Leggings",
+  "item.arclight.shadow_boots": "Shadow Paladin Boots",
 
   //Blocks:
   "block.arclight.arclight_ore": "Arclight Ore",

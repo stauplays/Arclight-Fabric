@@ -7,7 +7,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.verox.arclight.block.ModBlocks;
 import net.verox.arclight.entity.armor.ArclightArmorRenderer;
 import net.verox.arclight.entity.armor.HolyKnightArmorRenderer;
-import net.verox.arclight.entity.armor.MoonlightArmorRenderer;
+import net.verox.arclight.entity.armor.ShadowArmorRenderer;
 import net.verox.arclight.entity.mob.EntityTypes;
 import net.verox.arclight.entity.mob.client.AngelRenderer;
 import net.verox.arclight.entity.mob.client.JellyfishRenderer;
@@ -27,8 +27,8 @@ public class ArclightModClient implements ClientModInitializer {
         GeoArmorRenderer.registerArmorRenderer(new HolyKnightArmorRenderer(), ModItems.HOLYKNIGHT_BOOTS,
                 ModItems.HOLYKNIGHT_LEGGINGS, ModItems.HOLYKNIGHT_CHESTLATE, ModItems.HOLYKNIGHT_HELMET);
 
-        GeoArmorRenderer.registerArmorRenderer(new MoonlightArmorRenderer(), ModItems.MOONLIGHT_BOOTS,
-                ModItems.MOONLIGHT_LEGGINGS, ModItems.MOONLIGHT_CHESTLATE, ModItems.MOONLIGHT_HELMET);
+        GeoArmorRenderer.registerArmorRenderer(new ShadowArmorRenderer(), ModItems.SHADOW_BOOTS,
+                ModItems.SHADOW_CHESTLATE, ModItems.SHADOW_HELMET, ModItems.SHADOW_LEGGINGS);
 
         GeoItemRenderer.registerItemRenderer(ModItems.ANGEL_SWORD, new AngelSwordRenderer());
 

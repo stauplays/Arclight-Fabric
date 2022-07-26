@@ -175,20 +175,20 @@ public class ModItems {
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     //MoonlightArmor
-    public static final Item MOONLIGHT_HELMET = registerItem("moonlight_helmet",
-            new ArclightArmorItem(ModArmorMaterials.MOONLIGHT, EquipmentSlot.HEAD,
+    public static final Item SHADOW_HELMET = registerItem("shadow_helmet",
+            new ArclightArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
-    public static final Item MOONLIGHT_CHESTLATE = registerItem("moonlight_chestplate",
-            new ArclightArmorItem(ModArmorMaterials.MOONLIGHT, EquipmentSlot.CHEST,
+    public static final Item SHADOW_CHESTLATE = registerItem("shadow_chestplate",
+            new ArclightArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
-    public static final Item MOONLIGHT_LEGGINGS = registerItem("moonlight_leggings",
-            new ArclightArmorItem(ModArmorMaterials.MOONLIGHT, EquipmentSlot.LEGS,
+    public static final Item SHADOW_LEGGINGS = registerItem("shadow_leggings",
+            new ArclightArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
-    public static final Item MOONLIGHT_BOOTS = registerItem("moonlight_boots",
-            new ArclightArmorItem(ModArmorMaterials.MOONLIGHT, EquipmentSlot.FEET,
+    public static final Item SHADOW_BOOTS = registerItem("shadow_boots",
+            new ArclightArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     //SpawnAngel
