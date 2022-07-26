@@ -33,9 +33,14 @@ public class ArclightArmorItem extends ArmorItem implements IAnimatable {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.ARCLIGHT,
-                            new StatusEffectInstance(StatusEffects.STRENGTH, 400, 0,
-                                    false, false, true, null,
-                                    null)).build();
+                            new StatusEffectInstance(StatusEffects.STRENGTH, 20, 0,
+                                    false, false)).build();
+
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP2 =
+            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                    .put(ModArmorMaterials.ARCLIGHT,
+                            new StatusEffectInstance(StatusEffects.GLOWING, 100, 0,
+                                    false, false)).build();
     public ArclightArmorItem(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings) {
         super(material, slot, settings);
     }
@@ -65,7 +70,19 @@ public class ArclightArmorItem extends ArmorItem implements IAnimatable {
                 System.out.println(mapStatusEffect.shouldShowParticles());
             }
         }
+
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry2: MATERIAL_TO_EFFECT_MAP2.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry2.getKey();
+            StatusEffectInstance mapStatusEffect = entry2.getValue();
+
+            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+                System.out.println(mapStatusEffect.shouldShowParticles());
+            }
+        }
     }
+
+
 
     private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial,
                                             StatusEffectInstance mapStatusEffect) {
@@ -73,7 +90,7 @@ public class ArclightArmorItem extends ArmorItem implements IAnimatable {
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
-                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
+                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier(), mapStatusEffect.isAmbient(), mapStatusEffect.shouldShowParticles()));
 
         }
     }

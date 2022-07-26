@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.verox.arclight.ArclightMod;
 import net.verox.arclight.ModGroup;
@@ -94,15 +95,15 @@ public class ModItems {
 
     //ArclightCore
     public static final Item ARCLIGHT_CORE = registerItem("arclight_core",
-            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES)));
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.RARE)));
 
     //ArclightHalo
     public static final Item ANGEL_SPAWN = registerItem("angel_spawn",
-            new AngelSpawnItem(new FabricItemSettings().group(ModGroup.ARCLIGHT_MOBS).maxDamage(1)));
+            new AngelSpawnItem(new FabricItemSettings().group(ModGroup.ARCLIGHT_MOBS).maxDamage(1).rarity(Rarity.RARE)));
 
     //ScorpionStinger
     public static final Item STINGER = registerItem("stinger",
-            new ScorpionSpawnItem(new FabricItemSettings().group(ModGroup.ARCLIGHT_MOBS).maxDamage(1)));
+            new ScorpionSpawnItem(new FabricItemSettings().group(ModGroup.ARCLIGHT_MOBS).maxDamage(1).rarity(Rarity.RARE)));
 
     //ArclightGem
     public static final Item ARCLIGHT_GEM = registerItem("arclight_gem",
@@ -122,7 +123,7 @@ public class ModItems {
 
     //MoonlightCore
     public static final Item MOONLIGHT_CORE = registerItem("moonlight_core",
-            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES)));
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.RARE)));
 
     //MoonlightCrystal
     public static final Item MOONLIGHT_CRYSTAL = registerItem("moonlight_crystal",
@@ -143,53 +144,53 @@ public class ModItems {
     //ArclightArmor
     public static final Item ARCLIGHTS_HELMET = registerItem("arclight_helmet",
             new ArclightArmorItem(ModArmorMaterials.ARCLIGHT, EquipmentSlot.HEAD,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     public static final Item ARCLIGHTS_CHESTLATE = registerItem("arclight_chestplate",
             new ArclightArmorItem(ModArmorMaterials.ARCLIGHT, EquipmentSlot.CHEST,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     public static final Item ARCLIGHTS_LEGGINGS = registerItem("arclight_leggings",
             new ArclightArmorItem(ModArmorMaterials.ARCLIGHT, EquipmentSlot.LEGS,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     public static final Item ARCLIGHTS_BOOTS = registerItem("arclight_boots",
             new ArclightArmorItem(ModArmorMaterials.ARCLIGHT, EquipmentSlot.FEET,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     //HolyArmor
     public static final Item HOLYKNIGHT_HELMET = registerItem("holyknight_helmet",
             new HolyknightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.HEAD,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     public static final Item HOLYKNIGHT_CHESTLATE = registerItem("holyknight_chestplate",
             new HolyknightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.CHEST,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     public static final Item HOLYKNIGHT_LEGGINGS = registerItem("holyknight_leggings",
             new HolyknightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.LEGS,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     public static final Item HOLYKNIGHT_BOOTS = registerItem("holyknight_boots",
             new HolyknightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.FEET,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     //MoonlightArmor
     public static final Item SHADOW_HELMET = registerItem("shadow_helmet",
             new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.HEAD,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     public static final Item SHADOW_CHESTLATE = registerItem("shadow_chestplate",
             new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.CHEST,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     public static final Item SHADOW_LEGGINGS = registerItem("shadow_leggings",
             new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.LEGS,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     public static final Item SHADOW_BOOTS = registerItem("shadow_boots",
             new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.FEET,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     //SpawnAngel
     public static final Item ANGEL_SPAWN_EGG = registerItem("angel_spawn_egg",
@@ -209,10 +210,10 @@ public class ModItems {
     //AngelSword
     public static final Item ANGEL_SWORD = registerItem("angel_sword",
             new AngelSwordItem(ModToolMaterials.ARCLIGHT_TOOL, 7, -2.4f,
-                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.EPIC)));
 
     public static final Item SCORPION_SCALE = registerItem("scorpion_scale",
-            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES)));
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.EPIC)));
 
 
     private static Item registerItem(String name, Item item){

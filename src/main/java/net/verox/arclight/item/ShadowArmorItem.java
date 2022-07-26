@@ -33,9 +33,14 @@ public class ShadowArmorItem extends ArmorItem implements IAnimatable {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.SHADOW,
-                        new StatusEffectInstance(StatusEffects.SPEED, 400, 1,
-                                    false, false, true, null,
-                                    null)).build();
+                        new StatusEffectInstance(StatusEffects.SLOWNESS, 20, 0,
+                                    false, false)).build();
+
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP2 =
+            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                    .put(ModArmorMaterials.SHADOW,
+                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20, 0,
+                                    false, false)).build();
     public ShadowArmorItem(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings) {
         super(material, slot, settings);
     }
@@ -65,6 +70,15 @@ public class ShadowArmorItem extends ArmorItem implements IAnimatable {
                 System.out.println(mapStatusEffect.shouldShowParticles());
             }
         }
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry2 : MATERIAL_TO_EFFECT_MAP2.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry2.getKey();
+            StatusEffectInstance mapStatusEffect = entry2.getValue();
+
+            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+                System.out.println(mapStatusEffect.shouldShowParticles());
+            }
+        }
     }
 
     private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial,
@@ -73,7 +87,7 @@ public class ShadowArmorItem extends ArmorItem implements IAnimatable {
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
-                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
+                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier(), mapStatusEffect.isAmbient(), mapStatusEffect.shouldShowParticles()));
 
         }
     }

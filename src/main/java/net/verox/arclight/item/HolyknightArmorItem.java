@@ -33,13 +33,13 @@ public class HolyknightArmorItem extends ArmorItem implements IAnimatable {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.HOLYKNIGHT,
-                            new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 1,
+                            new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20, 0,
                                     false, false)).build();
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP2 =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.HOLYKNIGHT,
-                            new StatusEffectInstance(StatusEffects.HASTE, 400, 1,
+                            new StatusEffectInstance(StatusEffects.HASTE, 20, 1,
                                     false, false)).build();
 
     public HolyknightArmorItem(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings) {
@@ -55,7 +55,7 @@ public class HolyknightArmorItem extends ArmorItem implements IAnimatable {
                 if(hasFullSuitOfArmorOn(player)) {
                     evaluateArmorEffects(player);
                 }
-            }
+           }
         }
 
         super.inventoryTick(stack, world, entity, slot, selected);
@@ -88,8 +88,7 @@ public class HolyknightArmorItem extends ArmorItem implements IAnimatable {
 
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
-                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
-
+                    mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier(), mapStatusEffect.isAmbient(), mapStatusEffect.shouldShowParticles()));
         }
     }
 
