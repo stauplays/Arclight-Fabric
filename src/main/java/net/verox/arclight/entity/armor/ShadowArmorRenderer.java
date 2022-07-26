@@ -1,9 +1,10 @@
 package net.verox.arclight.entity.armor;
 
 import net.verox.arclight.item.ArclightArmorItem;
+import net.verox.arclight.item.ShadowArmorItem;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
-public class ShadowArmorRenderer extends GeoArmorRenderer<ArclightArmorItem> {
+public class ShadowArmorRenderer extends GeoArmorRenderer<ShadowArmorItem> {
     public ShadowArmorRenderer() {
         super(new ShadowArmorModel());
 

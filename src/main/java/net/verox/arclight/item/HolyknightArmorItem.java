@@ -26,17 +26,23 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-public class ArclightArmorItem extends ArmorItem implements IAnimatable {
+public class HolyknightArmorItem extends ArmorItem implements IAnimatable {
 
     private final AnimationFactory factory = new AnimationFactory(this);
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.ARCLIGHT,
-                            new StatusEffectInstance(StatusEffects.STRENGTH, 400, 0,
-                                    false, false, true, null,
-                                    null)).build();
-    public ArclightArmorItem(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings) {
+                    .put(ModArmorMaterials.HOLYKNIGHT,
+                            new StatusEffectInstance(StatusEffects.JUMP_BOOST, 400, 1,
+                                    false, false)).build();
+
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP2 =
+            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                    .put(ModArmorMaterials.HOLYKNIGHT,
+                            new StatusEffectInstance(StatusEffects.HASTE, 400, 1,
+                                    false, false)).build();
+
+    public HolyknightArmorItem(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings) {
         super(material, slot, settings);
     }
 
@@ -59,6 +65,15 @@ public class ArclightArmorItem extends ArmorItem implements IAnimatable {
         for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry.getKey();
             StatusEffectInstance mapStatusEffect = entry.getValue();
+
+            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+                System.out.println(mapStatusEffect.shouldShowParticles());
+            }
+        }
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry2 : MATERIAL_TO_EFFECT_MAP2.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry2.getKey();
+            StatusEffectInstance mapStatusEffect = entry2.getValue();
 
             if(hasCorrectArmorOn(mapArmorMaterial, player)) {
                 addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
@@ -117,8 +132,8 @@ public class ArclightArmorItem extends ArmorItem implements IAnimatable {
             }
         }
 
-        boolean isWearingAll = armorList.containsAll(Arrays.asList(ModItems.ARCLIGHTS_BOOTS,
-                ModItems.ARCLIGHTS_LEGGINGS, ModItems.ARCLIGHTS_CHESTLATE, ModItems.ARCLIGHTS_HELMET));
+        boolean isWearingAll = armorList.containsAll(Arrays.asList(ModItems.HOLYKNIGHT_HELMET,
+                ModItems.HOLYKNIGHT_BOOTS, ModItems.HOLYKNIGHT_CHESTLATE, ModItems.HOLYKNIGHT_LEGGINGS));
         return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
     }
 

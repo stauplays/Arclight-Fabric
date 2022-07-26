@@ -2,25 +2,41 @@ package net.verox.arclight.item;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import org.spongepowered.include.com.google.common.collect.ImmutableMap;
+import software.bernie.geckolib3.core.IAnimatable;
+import software.bernie.geckolib3.core.PlayState;
+import software.bernie.geckolib3.core.builder.AnimationBuilder;
+import software.bernie.geckolib3.core.controller.AnimationController;
+import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
+import software.bernie.geckolib3.core.manager.AnimationData;
+import software.bernie.geckolib3.core.manager.AnimationFactory;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
-public class ModArmorItems extends ArmorItem {
-    private static final Map<ArmorMaterial, StatusEffectInstance > MATERIAL_TO_EFFECT_MAP =
+public class ShadowArmorItem extends ArmorItem implements IAnimatable {
+
+    private final AnimationFactory factory = new AnimationFactory(this);
+
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.ARCLIGHT,
-                            new StatusEffectInstance(StatusEffects.STRENGTH, 400, 0,
+                    .put(ModArmorMaterials.SHADOW,
+                        new StatusEffectInstance(StatusEffects.SPEED, 400, 1,
                                     false, false, true, null,
                                     null)).build();
-    public ModArmorItems(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    public ShadowArmorItem(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings) {
         super(material, slot, settings);
     }
 
@@ -59,9 +75,6 @@ public class ModArmorItems extends ArmorItem {
             player.addStatusEffect(new StatusEffectInstance(mapStatusEffect.getEffectType(),
                     mapStatusEffect.getDuration(), mapStatusEffect.getAmplifier()));
 
-            // if(new Random().nextFloat() > 0.6f) { // 40% of damaging the armor! Possibly!
-            //     player.getInventory().damageArmor(DamageSource.MAGIC, 1f, new int[]{0, 1, 2, 3});
-            // }
         }
     }
 
@@ -84,4 +97,41 @@ public class ModArmorItems extends ArmorItem {
         return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
                 leggings.getMaterial() == material && boots.getMaterial() == material;
     }
+
+    private <P extends IAnimatable> PlayState predicate(AnimationEvent<P> event) {
+        LivingEntity livingEntity = event.getExtraDataOfType(LivingEntity.class).get(0);
+
+        event.getController().setAnimation(new AnimationBuilder().addAnimation(
+                "idle", true));
+
+        if (livingEntity instanceof ArmorStandEntity) {
+            return PlayState.CONTINUE;
+        }
+
+        List<Item> armorList = new ArrayList<>(4);
+        for (EquipmentSlot slot : EquipmentSlot.values()) {
+            if (slot.getType() == EquipmentSlot.Type.ARMOR) {
+                if (livingEntity.getEquippedStack(slot) != null) {
+                    armorList.add(livingEntity.getEquippedStack(slot).getItem());
+                }
+            }
+        }
+
+        boolean isWearingAll = armorList.containsAll(Arrays.asList(ModItems.SHADOW_BOOTS,
+                ModItems.SHADOW_HELMET, ModItems.SHADOW_LEGGINGS, ModItems.SHADOW_CHESTLATE));
+        return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
+    }
+
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+    @Override
+    public void registerControllers(AnimationData data) {
+        data.addAnimationController(new AnimationController(this, "controller",
+                20, this::predicate));
+    }
+
+    @Override
+    public AnimationFactory getFactory() {
+        return this.factory;
+    }
+
 }

@@ -159,36 +159,36 @@ public class ModItems {
 
     //HolyArmor
     public static final Item HOLYKNIGHT_HELMET = registerItem("holyknight_helmet",
-            new ArclightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.HEAD,
+            new HolyknightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item HOLYKNIGHT_CHESTLATE = registerItem("holyknight_chestplate",
-            new ArclightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.CHEST,
+            new HolyknightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item HOLYKNIGHT_LEGGINGS = registerItem("holyknight_leggings",
-            new ArclightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.LEGS,
+            new HolyknightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item HOLYKNIGHT_BOOTS = registerItem("holyknight_boots",
-            new ArclightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.FEET,
+            new HolyknightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     //MoonlightArmor
     public static final Item SHADOW_HELMET = registerItem("shadow_helmet",
-            new ArclightArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.HEAD,
+            new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item SHADOW_CHESTLATE = registerItem("shadow_chestplate",
-            new ArclightArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.CHEST,
+            new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item SHADOW_LEGGINGS = registerItem("shadow_leggings",
-            new ArclightArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.LEGS,
+            new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item SHADOW_BOOTS = registerItem("shadow_boots",
-            new ArclightArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.FEET,
+            new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     //SpawnAngel
