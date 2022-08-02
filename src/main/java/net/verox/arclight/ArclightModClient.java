@@ -5,9 +5,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.verox.arclight.block.ModBlocks;
-import net.verox.arclight.entity.armor.ArclightArmorRenderer;
-import net.verox.arclight.entity.armor.HolyKnightArmorRenderer;
-import net.verox.arclight.entity.armor.ShadowArmorRenderer;
+import net.verox.arclight.entity.armor.*;
 import net.verox.arclight.entity.mob.EntityTypes;
 import net.verox.arclight.entity.mob.client.AngelRenderer;
 import net.verox.arclight.entity.mob.client.JellyfishRenderer;
@@ -28,7 +26,13 @@ public class ArclightModClient implements ClientModInitializer {
                 ModItems.HOLYKNIGHT_LEGGINGS, ModItems.HOLYKNIGHT_CHESTLATE, ModItems.HOLYKNIGHT_HELMET);
 
         GeoArmorRenderer.registerArmorRenderer(new ShadowArmorRenderer(), ModItems.SHADOW_BOOTS,
-                ModItems.SHADOW_CHESTLATE, ModItems.SHADOW_HELMET, ModItems.SHADOW_LEGGINGS);
+                ModItems.SHADOW_CHESTPLATE, ModItems.SHADOW_HELMET, ModItems.SHADOW_LEGGINGS);
+
+        GeoArmorRenderer.registerArmorRenderer(new MoonlightArmorRenderer(), ModItems.MOONLIGHT_BOOTS,
+                ModItems.MOONLIGHT_CHESTPLATE, ModItems.MOONLIGHT_LEGGINGS, ModItems.MOONLIGHT_HELMET);
+
+        GeoArmorRenderer.registerArmorRenderer(new ScorpionArmorRenderer(), ModItems.SCORPION_BOOTS,
+                ModItems.SCORPION_CHESTPLATE, ModItems.SCORPION_LEGGINGS, ModItems.SCORPION_HELMET);
 
         GeoItemRenderer.registerItemRenderer(ModItems.ANGEL_SWORD, new AngelSwordRenderer());
 
@@ -49,5 +53,7 @@ public class ArclightModClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityTypes.ANGEL, AngelRenderer::new);
         EntityRendererRegistry.register(EntityTypes.JELLY, JellyfishRenderer::new);
         EntityRendererRegistry.register(EntityTypes.SCORPION, ScorpionRenderer::new);
+
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BOSS_SPAWNER, RenderLayer.getCutout());
     }
 }

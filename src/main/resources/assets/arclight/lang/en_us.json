@@ -2,6 +2,7 @@
   //Items:
   "item.arclight.arclight_gem": "Arclight Gem",
   "item.arclight.arclight_core": "Arclight Core",
+  "item.arclight.shadow_core": "Shadow Core",
   "item.arclight.moonlight_core": "Moonlight Core",
   "item.arclight.jade_shard": "Jade Shard",
   "item.arclight.moonlight_crystal": "Moonlight Shard",
@@ -53,6 +54,16 @@
   "item.arclight.shadow_chestplate": "Shadow Paladin Chestplate",
   "item.arclight.shadow_leggings": "Shadow Paladin Leggings",
   "item.arclight.shadow_boots": "Shadow Paladin Boots",
+
+  "item.arclight.moonlight_helmet": "Moonlight Paladin Helmet",
+  "item.arclight.moonlight_chestplate": "Moonlight Paladin Chestplate",
+  "item.arclight.moonlight_leggings": "Moonlight Paladin Leggings",
+  "item.arclight.moonlight_boots": "Moonlight Paladin Boots",
+
+  "item.arclight.scorpion_helmet": "Scorpion Scale Helmet",
+  "item.arclight.scorpion_chestplate": "Scorpion Scale Chestplate",
+  "item.arclight.scorpion_leggings": "Scorpion Scale Leggings",
+  "item.arclight.scorpion_boots": "Scorpion Scale Boots",
 
   //Blocks:
   "block.arclight.arclight_ore": "Arclight Ore",
@@ -108,6 +119,8 @@
   "block.arclight.jade_trapdoor": "Jade Birch Trapdoor",
   "block.arclight.shadow_door": "Shadow Door",
   "block.arclight.shadow_trapdoor": "Shadow Trapdoor",
+  "block.arclight.boss_spawner": "Boss-Spawn Block",
+  "block.arclight.boss_spawner_nether": "Boss-Spawn Block Nether",
 
   //Entity
   "entity.arclight.angel": "Arclight Angel",

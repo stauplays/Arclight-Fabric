@@ -28,7 +28,7 @@ public class AngelSpawnItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         if(Screen.hasShiftDown()) {
-            tooltip.add(Text.literal("Right Click on Arclight Block to summon the Boss!").formatted(Formatting.LIGHT_PURPLE));
+            tooltip.add(Text.literal("Right Click on Boss-Spawn Block to summon the Boss!").formatted(Formatting.LIGHT_PURPLE));
         } else {
             tooltip.add(Text.literal("Press Shift!").formatted(Formatting.DARK_GRAY));
         }
@@ -64,6 +64,6 @@ public class AngelSpawnItem extends Item {
     }
 
     private boolean isValuableBlock(Block block) {
-        return block == ModBlocks.ARCLIGHT_BLOCK;
+        return block == ModBlocks.BOSS_SPAWNER;
     }
 }

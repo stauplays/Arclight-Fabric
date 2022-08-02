@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "addition": {
-    "item": "arclight:shadow_core"
+    "item": "arclight:moonlight_core"
   },
   "base": {
     "item": "minecraft:netherite_boots"
   },
   "result": {
-    "item": "arclight:shadow_boots"
+    "item": "arclight:moonlight_boots"
   }
 }

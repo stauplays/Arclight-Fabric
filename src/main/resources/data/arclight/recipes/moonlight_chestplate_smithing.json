@@ -1,12 +1,12 @@
 {
   "type": "minecraft:smithing",
   "addition": {
-    "item": "arclight:shadow_core"
+    "item": "arclight:moonlight_core"
   },
   "base": {
     "item": "minecraft:netherite_chestplate"
   },
   "result": {
-    "item": "arclight:shadow_chestplate"
+    "item": "arclight:moonlight_chestplate"
   }
 }

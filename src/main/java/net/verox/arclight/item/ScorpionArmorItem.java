@@ -26,22 +26,22 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-public class ShadowArmorItem extends ArmorItem implements IAnimatable {
+public class ScorpionArmorItem extends ArmorItem implements IAnimatable {
 
     private final AnimationFactory factory = new AnimationFactory(this);
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.SHADOW,
-                        new StatusEffectInstance(StatusEffects.SLOWNESS, 20, 0,
+                    .put(ModArmorMaterials.SCORPIONSCALE,
+                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20, 0,
                                     false, false)).build();
 
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP2 =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.SHADOW,
-                            new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20, 0,
+                    .put(ModArmorMaterials.SCORPIONSCALE,
+                            new StatusEffectInstance(StatusEffects.SLOWNESS, 20, 0,
                                     false, false)).build();
-    public ShadowArmorItem(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings) {
+    public ScorpionArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 
@@ -70,7 +70,8 @@ public class ShadowArmorItem extends ArmorItem implements IAnimatable {
                 System.out.println(mapStatusEffect.shouldShowParticles());
             }
         }
-        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry2 : MATERIAL_TO_EFFECT_MAP2.entrySet()) {
+
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry2: MATERIAL_TO_EFFECT_MAP2.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry2.getKey();
             StatusEffectInstance mapStatusEffect = entry2.getValue();
 
@@ -80,6 +81,8 @@ public class ShadowArmorItem extends ArmorItem implements IAnimatable {
             }
         }
     }
+
+
 
     private void addStatusEffectForMaterial(PlayerEntity player, ArmorMaterial mapArmorMaterial,
                                             StatusEffectInstance mapStatusEffect) {
@@ -131,8 +134,8 @@ public class ShadowArmorItem extends ArmorItem implements IAnimatable {
             }
         }
 
-        boolean isWearingAll = armorList.containsAll(Arrays.asList(ModItems.SHADOW_BOOTS,
-                ModItems.SHADOW_HELMET, ModItems.SHADOW_LEGGINGS, ModItems.SHADOW_CHESTPLATE));
+        boolean isWearingAll = armorList.containsAll(Arrays.asList(ModItems.MOONLIGHT_BOOTS,
+                ModItems.MOONLIGHT_HELMET, ModItems.MOONLIGHT_CHESTPLATE, ModItems.MOONLIGHT_LEGGINGS));
         return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
     }
 

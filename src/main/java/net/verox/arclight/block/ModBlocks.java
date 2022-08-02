@@ -173,6 +173,12 @@ public class ModBlocks {
             new OreBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModGroup.ARCLIGHT_BUILDING);
 
+    public static final Block BOSS_SPAWNER = registerBlock("boss_spawner",
+            new Block(FabricBlockSettings.copy(Blocks.BEDROCK).nonOpaque()), ModGroup.ARCLIGHT_MOBS);
+
+    public static final Block BOSS_SPAWNER_NETHER = registerBlock("boss_spawner_nether",
+            new Block(FabricBlockSettings.copy(Blocks.BEDROCK).nonOpaque()), ModGroup.ARCLIGHT_MOBS);
+
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
         registerBlockItem(name, block, tab);
         return Registry.register(Registry.BLOCK, new Identifier(ArclightMod.MOD_ID, name), block);

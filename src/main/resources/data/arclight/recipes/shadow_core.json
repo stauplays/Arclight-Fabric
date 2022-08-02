@@ -5,10 +5,10 @@
       "item": "arclight:jade_ingot"
     },
     "A": {
-      "item": "arclight:moonlight_ingot"
+      "item": "minecraft:echo_shard"
     },
     "N": {
-      "item": "arclight:arclight_core"
+      "item": "minecraft:nether_star"
     }
   },
   "pattern": [
@@ -17,6 +17,6 @@
     "JAJ"
   ],
   "result": {
-    "item": "arclight:moonlight_core"
+    "item": "arclight:shadow_core"
   }
 }

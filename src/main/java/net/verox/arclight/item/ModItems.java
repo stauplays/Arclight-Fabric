@@ -175,12 +175,12 @@ public class ModItems {
             new HolyknightArmorItem(ModArmorMaterials.HOLYKNIGHT, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
-    //MoonlightArmor
+    //ShadowArmor
     public static final Item SHADOW_HELMET = registerItem("shadow_helmet",
             new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
-    public static final Item SHADOW_CHESTLATE = registerItem("shadow_chestplate",
+    public static final Item SHADOW_CHESTPLATE = registerItem("shadow_chestplate",
             new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
@@ -190,6 +190,40 @@ public class ModItems {
 
     public static final Item SHADOW_BOOTS = registerItem("shadow_boots",
             new ShadowArmorItem(ModArmorMaterials.SHADOW, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    //MoonlightArmor
+    public static final Item MOONLIGHT_HELMET = registerItem("moonlight_helmet",
+            new MoonlightArmorItem(ModArmorMaterials.MOONLIGHT, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item MOONLIGHT_CHESTPLATE = registerItem("moonlight_chestplate",
+            new MoonlightArmorItem(ModArmorMaterials.MOONLIGHT, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item MOONLIGHT_LEGGINGS = registerItem("moonlight_leggings",
+            new MoonlightArmorItem(ModArmorMaterials.MOONLIGHT, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item MOONLIGHT_BOOTS = registerItem("moonlight_boots",
+            new MoonlightArmorItem(ModArmorMaterials.MOONLIGHT, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    //ScorpionArmor
+    public static final Item SCORPION_HELMET = registerItem("scorpion_helmet",
+            new ScorpionArmorItem(ModArmorMaterials.SCORPIONSCALE, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item SCORPION_CHESTPLATE = registerItem("scorpion_chestplate",
+            new ScorpionArmorItem(ModArmorMaterials.SCORPIONSCALE, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item SCORPION_LEGGINGS = registerItem("scorpion_leggings",
+            new ScorpionArmorItem(ModArmorMaterials.SCORPIONSCALE, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item SCORPION_BOOTS = registerItem("scorpion_boots",
+            new ScorpionArmorItem(ModArmorMaterials.SCORPIONSCALE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
     //SpawnAngel
@@ -206,6 +240,10 @@ public class ModItems {
     public static final Item SCORPION_SPAWN_EGG = registerItem("scorpion_spawn_egg",
             new SpawnEggItem(EntityTypes.SCORPION,0x280404, 0xF89918,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_MOBS)));
+
+    //ShadowCore
+    public static final Item SHADOW_CORE = registerItem("shadow_core",
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.RARE)));
 
     //AngelSword
     public static final Item ANGEL_SWORD = registerItem("angel_sword",

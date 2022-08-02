@@ -4,6 +4,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -17,13 +18,24 @@ public enum ModArmorMaterials implements ArmorMaterial {
             () -> {return Ingredient.ofItems(ModItems.ARCLIGHT_INGOT);
     }),
 
+    MOONLIGHT("moonlight", 45, new int[]{5, 9, 12, 5}, 25,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.3F,
+            () -> {return Ingredient.ofItems(ModItems.MOONLIGHT_INGOT);
+    }),
+
     SHADOW("shadow", 50, new int[]{6, 10, 13, 6}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0F, 0.3F,
-            () -> {return Ingredient.ofItems(ModItems.MOONLIGHT_INGOT);
+            () -> {return Ingredient.ofItems(ModItems.JADE_INGOT);
+    }),
+
+    SCORPIONSCALE("scorpionscale", 50, new int[]{6, 10, 13, 6}, 25,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0F, 0.3F,
+            () -> {return Ingredient.ofItems(Items.NETHERITE_INGOT);
             }),
+
     HOLYKNIGHT("holyknight", 30, new int[]{3, 6, 8, 3}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.2F,
-            () -> {return Ingredient.ofItems(ModItems.MOONLIGHT_INGOT);
+            () -> {return Ingredient.ofItems(Items.COPPER_INGOT);
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
