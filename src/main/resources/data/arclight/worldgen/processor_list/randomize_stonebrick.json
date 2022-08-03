@@ -1,0 +1,68 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+
+      "rules": [
+        {
+          "input_predicate": {
+            "block": "minecraft:stone_bricks",
+            "probability": 0.05,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:infested_stone_bricks"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:stone_bricks",
+            "probability": 0.05,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:emerald_ore"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:deepslate_bricks",
+            "probability": 0.01,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "minecraft:deepslate_redstone_ore",
+            "Properties": {
+              "lit": false
+            }
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:nether_bricks",
+            "probability": 0.01,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "arclight:moonlight_ore",
+            "Properties": {
+              "lit": false
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

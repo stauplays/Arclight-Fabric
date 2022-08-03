@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "arclight:boss_scorpion",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1224466881,
+    "spacing": 75,
+    "separation": 65,
+
+    "type": "minecraft:random_spread"
+  }
+}

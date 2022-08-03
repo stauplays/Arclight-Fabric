@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "arclight:boss_angel",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1224466880,
+    "spacing": 60,
+    "separation": 50,
+
+    "type": "minecraft:random_spread"
+  }
+}

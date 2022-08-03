@@ -1,0 +1,15 @@
+{
+  "name": "arclight:scorpion_boss/start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "arclight:boss_scorpion",
+        "processors": "arclight:randomize_stonebrick",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}
