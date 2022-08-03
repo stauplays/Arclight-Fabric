@@ -3,7 +3,7 @@
     "icon": {
       "item": "arclight:scorpion_scale"
     },
-    "title": "Scorpion Scale",
+    "title": "Scorpion Slayer",
     "description": "Defeated the Scorpion!",
     "frame": "task",
     "show_toast": true,
