@@ -10,12 +10,12 @@ public class HolyKnightArmorRenderer extends GeoArmorRenderer<HolyknightArmorIte
 
         this.headBone = "armorHead";
         this.bodyBone = "armorBody";
-        this.rightArmBone = "armorLeftArm";
-        this.leftArmBone = "armorRightArm";
-        this.rightLegBone = "armorLeftLeg";
-        this.leftLegBone = "armorRightLeg";
-        this.rightBootBone = "armorLeftBoots";
-        this.leftBootBone = "armorRightBoots";
+        this.rightArmBone = "armorRightArm";
+        this.leftArmBone = "armorLeftArm";
+        this.rightLegBone = "armorRightLeg";
+        this.leftLegBone = "armorLeftLeg";
+        this.rightBootBone = "armorRightBoots";
+        this.leftBootBone = "armorLeftBoots";
 
     }
 }

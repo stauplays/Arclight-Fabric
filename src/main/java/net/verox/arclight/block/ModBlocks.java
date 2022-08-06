@@ -169,6 +169,10 @@ public class ModBlocks {
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModGroup.ARCLIGHT_RESOURCES);
 
+    public static final Block  ALMANDINE_ORE = registerBlock("almandine_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
+                    UniformIntProvider.create(3, 7)), ModGroup.ARCLIGHT_RESOURCES);
+
     public static final Block  ARMOR_FORGE = registerBlock("armor_forge",
             new OreBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool(),
                     UniformIntProvider.create(3, 7)), ModGroup.ARCLIGHT_BUILDING);

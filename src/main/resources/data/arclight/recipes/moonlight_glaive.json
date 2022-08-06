@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_sword"
+    },
+    "X": {
+      "item": "arclight:moonlight_core"
+    }
+  },
+  "pattern": [
+    " #",
+    " X",
+    " #"
+  ],
+  "result": {
+    "item": "arclight:moonlight_glaive"
+  }
+}

@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "J": {
-      "item": "minecraft:magma_block"
+      "item": "minecraft:charcoal"
     },
     "A": {
-      "item": "minecraft:obsidian"
+      "item": "minecraft:iron_ingot"
     },
     "N": {
-      "item": "arclight:moonlight_core"
+      "item": "minecraft:redstone_block"
     }
   },
   "pattern": [
@@ -17,6 +17,6 @@
     "JAJ"
   ],
   "result": {
-    "item": "arclight:stinger"
+    "item": "arclight:steel_core"
   }
 }

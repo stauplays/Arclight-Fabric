@@ -12,6 +12,7 @@ import net.verox.arclight.entity.mob.client.JellyfishRenderer;
 import net.verox.arclight.entity.mob.client.ScorpionRenderer;
 import net.verox.arclight.item.ModItems;
 import net.verox.arclight.item.client.AngelSwordRenderer;
+import net.verox.arclight.item.client.GlaiveRenderer;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 import software.bernie.geckolib3.renderers.geo.GeoItemRenderer;
 
@@ -34,7 +35,14 @@ public class ArclightModClient implements ClientModInitializer {
         GeoArmorRenderer.registerArmorRenderer(new ScorpionArmorRenderer(), ModItems.SCORPION_BOOTS,
                 ModItems.SCORPION_CHESTPLATE, ModItems.SCORPION_LEGGINGS, ModItems.SCORPION_HELMET);
 
+        GeoArmorRenderer.registerArmorRenderer(new FrozenArmorRenderer(), ModItems.FROZEN_BOOTS,
+                ModItems.FROZEN_CHESTPLATE, ModItems.FROZEN_HELMET, ModItems.FROZEN_LEGGINGS);
+
+        GeoArmorRenderer.registerArmorRenderer(new SteelArmorRenderer(), ModItems.STEEL_BOOTS,
+                ModItems.STEEL_CHESTPLATE, ModItems.STEEL_HELMET, ModItems.STEEL_LEGGINGS);
+
         GeoItemRenderer.registerItemRenderer(ModItems.ANGEL_SWORD, new AngelSwordRenderer());
+        GeoItemRenderer.registerItemRenderer(ModItems.MOONLIGHT_GLAIVE, new GlaiveRenderer());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOON_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOON_TRAPDOOR, RenderLayer.getCutout());

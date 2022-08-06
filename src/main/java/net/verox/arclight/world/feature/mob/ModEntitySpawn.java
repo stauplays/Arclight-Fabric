@@ -12,7 +12,7 @@ import net.verox.arclight.entity.mob.EntityTypes;
 public class ModEntitySpawn {
     public static void addEntitySpawn() {
         BiomeModifications.addSpawn(BiomeSelectors.foundInTheEnd(),
-                SpawnGroup.CREATURE, EntityTypes.JELLY, 5, 2, 5);
+                SpawnGroup.CREATURE, EntityTypes.JELLY, 2, 1, 4);
 
         SpawnRestrictionAccessor.callRegister(EntityTypes.JELLY, SpawnRestriction.Location.NO_RESTRICTIONS,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, FlyingEntity::canMobSpawn);

@@ -40,15 +40,15 @@ public class ModItems {
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item MOONLIGHT_AXE = registerItem("moonlight_axe",
-            new ModPickaxeItem(ModToolMaterials.MOONLIGHT_TOOL, 5, -3f,
+            new ModAxeItem(ModToolMaterials.MOONLIGHT_TOOL, 5, -3f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item MOONLIGHT_SHOVEL = registerItem("moonlight_shovel",
-            new ModPickaxeItem(ModToolMaterials.MOONLIGHT_TOOL, 1, -2.8f,
+            new ModShovelItem(ModToolMaterials.MOONLIGHT_TOOL, 1, -2.8f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item MOONLIGHT_HOE = registerItem("moonlight_hoe",
-            new ModPickaxeItem(ModToolMaterials.MOONLIGHT_TOOL, -3, 0f,
+            new ModHoeItem(ModToolMaterials.MOONLIGHT_TOOL, -3, 0f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     //JadeTools
@@ -61,15 +61,15 @@ public class ModItems {
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item JADE_AXE = registerItem("jade_axe",
-            new ModPickaxeItem(ModToolMaterials.JADE_TOOL, 5, -3f,
+            new ModAxeItem(ModToolMaterials.JADE_TOOL, 5, -3f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item JADE_SHOVEL = registerItem("jade_shovel",
-            new ModPickaxeItem(ModToolMaterials.JADE_TOOL, 1, -3f,
+            new ModShovelItem(ModToolMaterials.JADE_TOOL, 1, -3f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item JADE_HOE = registerItem("jade_hoe",
-            new ModPickaxeItem(ModToolMaterials.JADE_TOOL, -4, 0f,
+            new ModHoeItem(ModToolMaterials.JADE_TOOL, -4, 0f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     //ArclightTools
@@ -82,27 +82,23 @@ public class ModItems {
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item ARCLIGHT_AXE = registerItem("arclight_axe",
-            new ModPickaxeItem(ModToolMaterials.ARCLIGHT_TOOL, 4, -3f,
+            new ModAxeItem(ModToolMaterials.ARCLIGHT_TOOL, 4, -3f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item ARCLIGHT_SHOVEL = registerItem("arclight_shovel",
-            new ModPickaxeItem(ModToolMaterials.ARCLIGHT_TOOL, 0, -3f,
+            new ModShovelItem(ModToolMaterials.ARCLIGHT_TOOL, 0, -3f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     public static final Item ARCLIGHT_HOE = registerItem("arclight_hoe",
-            new ModPickaxeItem(ModToolMaterials.ARCLIGHT_TOOL, -4, 0f,
+            new ModHoeItem(ModToolMaterials.ARCLIGHT_TOOL, -4, 0f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
-
-    //ArclightCore
-    public static final Item ARCLIGHT_CORE = registerItem("arclight_core",
-            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.RARE)));
 
     //ArclightHalo
     public static final Item ANGEL_SPAWN = registerItem("angel_spawn",
             new AngelSpawnItem(new FabricItemSettings().group(ModGroup.ARCLIGHT_MOBS).maxDamage(1).rarity(Rarity.RARE)));
 
-    //ScorpionStinger
-    public static final Item STINGER = registerItem("stinger",
+    //ScorpionHeart
+    public static final Item HEART = registerItem("heart",
             new ScorpionSpawnItem(new FabricItemSettings().group(ModGroup.ARCLIGHT_MOBS).maxDamage(1).rarity(Rarity.RARE)));
 
     //ArclightGem
@@ -121,10 +117,6 @@ public class ModItems {
     public static final Item JADE_INGOT = registerItem("jade_ingot",
             new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES)));
 
-    //MoonlightCore
-    public static final Item MOONLIGHT_CORE = registerItem("moonlight_core",
-            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.RARE)));
-
     //MoonlightCrystal
     public static final Item MOONLIGHT_CRYSTAL = registerItem("moonlight_crystal",
             new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES)));
@@ -139,6 +131,15 @@ public class ModItems {
 
     //MoonlightCrystalized
     public static final Item MOONLIGHT_JELLYBALL = registerItem("moonlight_jellyball",
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES)));
+
+    //AlmandineShard
+    public static final Item ALMANDINE_SHARD = registerItem("almandine_shard",
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES)));
+
+    //AlmandineIngot
+
+    public static final Item ALMANDINE_INGOT = registerItem("almandine_ingot",
             new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES)));
 
     //ArclightArmor
@@ -226,6 +227,40 @@ public class ModItems {
             new ScorpionArmorItem(ModArmorMaterials.SCORPIONSCALE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
+    //FrozenArmor
+    public static final Item FROZEN_HELMET = registerItem("frozen_helmet",
+            new FrozenArmorItem(ModArmorMaterials.FROZEN, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item FROZEN_CHESTPLATE = registerItem("frozen_chestplate",
+            new FrozenArmorItem(ModArmorMaterials.FROZEN, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item FROZEN_LEGGINGS = registerItem("frozen_leggings",
+            new FrozenArmorItem(ModArmorMaterials.FROZEN, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item FROZEN_BOOTS = registerItem("frozen_boots",
+            new FrozenArmorItem(ModArmorMaterials.FROZEN, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    //SteelArmor
+    public static final Item STEEL_HELMET = registerItem("steel_helmet",
+            new SteelArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item STEEL_CHESTPLATE = registerItem("steel_chestplate",
+            new SteelArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item STEEL_LEGGINGS = registerItem("steel_leggings",
+            new SteelArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
+    public static final Item STEEL_BOOTS = registerItem("steel_boots",
+            new SteelArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
     //SpawnAngel
     public static final Item ANGEL_SPAWN_EGG = registerItem("angel_spawn_egg",
             new SpawnEggItem(EntityTypes.ANGEL,0xE1EF05, 0x6FF2FA,
@@ -241,17 +276,41 @@ public class ModItems {
             new SpawnEggItem(EntityTypes.SCORPION,0x280404, 0xF89918,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_MOBS)));
 
+
+    //ArclightCore
+    public static final Item ARCLIGHT_CORE = registerItem("arclight_core",
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.RARE)));
+
+    //MoonlightCore
+    public static final Item MOONLIGHT_CORE = registerItem("moonlight_core",
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.RARE)));
+
     //ShadowCore
     public static final Item SHADOW_CORE = registerItem("shadow_core",
             new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.RARE)));
+
+    //FrostedCore
+    public static final Item FROSTED_CORE = registerItem("frosted_core",
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.UNCOMMON)));
+
+    //SteelCore
+    //public static final Item STEEL_CORE = registerItem("steel_core",
+    //        new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.UNCOMMON)));
 
     //AngelSword
     public static final Item ANGEL_SWORD = registerItem("angel_sword",
             new AngelSwordItem(ModToolMaterials.ARCLIGHT_TOOL, 7, -2.4f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.EPIC)));
 
+    public static final Item MOONLIGHT_GLAIVE = registerItem("moonlight_glaive",
+            new MoonlightGlaiveItem(ModToolMaterials.MOONLIGHT_TOOL, 6, -3.0f,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
+
     public static final Item SCORPION_SCALE = registerItem("scorpion_scale",
             new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.EPIC)));
+
+    public static final Item ANGEL_FEATHER = registerItem("angel_feather",
+            new Item(new FabricItemSettings().group(ModGroup.ARCLIGHT_RESOURCES).rarity(Rarity.UNCOMMON)));
 
 
     private static Item registerItem(String name, Item item){

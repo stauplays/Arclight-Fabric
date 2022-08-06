@@ -3,6 +3,9 @@
   "item.arclight.arclight_gem": "Arclight Gem",
   "item.arclight.arclight_core": "Arclight Core",
   "item.arclight.shadow_core": "Shadow Core",
+  "item.arclight.frosted_core": "Frozen Core",
+  "item.arclight.steel_core": "Steel Core",
+  "item.arclight.angel_feather": "Angel's Feather",
   "item.arclight.moonlight_core": "Moonlight Core",
   "item.arclight.jade_shard": "Jade Shard",
   "item.arclight.moonlight_crystal": "Moonlight Shard",
@@ -36,8 +39,11 @@
   "item.arclight.moonlight_jellyball": "Moonlight Jelly",
   "item.arclight.moonlight_crystalized": "Crystalized Jelly",
   "item.arclight.angel_sword": "Angel Sword",
-  "item.arclight.stinger": "Scorpion Stinger",
+  "item.arclight.heart": "Scorpion Heart",
   "item.arclight.scorpion_scale": "Scorpion Scale",
+  "item.arclight.moonlight_glaive": "Moonlight Glaive",
+  "item.arclight.almandine_shard": "Almandine Shard",
+  "item.arclight.almandine_ingot": "Almandine-Copper Alloy",
 
   //ArmorItems
   "item.arclight.arclight_helmet": "Arclight Paladin Helmet",
@@ -65,11 +71,22 @@
   "item.arclight.scorpion_leggings": "Scorpion Scale Leggings",
   "item.arclight.scorpion_boots": "Scorpion Scale Boots",
 
+  "item.arclight.frozen_helmet": "Frozen Knight Helmet",
+  "item.arclight.frozen_chestplate": "Frozen Knight Chestplate",
+  "item.arclight.frozen_leggings": "Frozen Knight Leggings",
+  "item.arclight.frozen_boots": "Frozen Knight Boots",
+
+  "item.arclight.steel_helmet": "Almandine Paladin Helmet",
+  "item.arclight.steel_chestplate": "Almandine Paladin Chestplate",
+  "item.arclight.steel_leggings": "Almandine Paladin Leggings",
+  "item.arclight.steel_boots": "Almandine Paladin Boots",
+
   //Blocks:
   "block.arclight.arclight_ore": "Arclight Ore",
   "block.arclight.arclight_block": "Block of Arclight",
   "block.arclight.moonlight_ore": "Moonlight Ore",
   "block.arclight.jade_ore": "Jade Ore",
+  "block.arclight.almandine_ore": "Almandine Ore",
   "block.arclight.cloudstone": "Cloudstone",
   "block.arclight.cloudstone_brick": "Cloudstone Brick",
   "block.arclight.cloudstone_cobbled": "Cobbled Cloudstone",

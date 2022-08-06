@@ -34,6 +34,10 @@ public class ModPlacedFeatures {
             ModConfiguredFeatures.MOONLIGHT_ORE, ModOreFeatures.modifiersWithCount(3,
                     HeightRangePlacementModifier.uniform(YOffset.aboveBottom(10), YOffset.aboveBottom(40))));
 
+    public static final RegistryEntry<PlacedFeature> ALMANDINE_ORE_PLACED = PlacedFeatures.register("almandine_ore_placed",
+            ModConfiguredFeatures.ALMANDINE_ORE, ModOreFeatures.modifiersWithCount(3,
+                    HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(74), YOffset.aboveBottom(94))));
+
     public static final RegistryEntry<PlacedFeature> JADE_ORE_PLACED = PlacedFeatures.register("jade_ore_placed",
             ModConfiguredFeatures.JADE_ORE, ModOreFeatures.modifiersWithCount(3,
                     HeightRangePlacementModifier.uniform(YOffset.aboveBottom(40), YOffset.aboveBottom(120))));

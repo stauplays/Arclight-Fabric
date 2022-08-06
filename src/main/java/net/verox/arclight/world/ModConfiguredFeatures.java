@@ -80,6 +80,15 @@ public class ModConfiguredFeatures {
             ConfiguredFeatures.register("arclight_ore", Feature.ORE,
                     new OreFeatureConfig(OVERWORLD_ARCLIGHT_ORE, 3));
 
+    public static final List<OreFeatureConfig.Target> OVERWORLD_ALMANDINE_ORE = List.of(
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.ALMANDINE_ORE.getDefaultState()));
+
+    public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> ALMANDINE_ORE =
+            ConfiguredFeatures.register("almandine_ore", Feature.ORE,
+                    new OreFeatureConfig(OVERWORLD_ALMANDINE_ORE, 3));
+
+
     public static final List<OreFeatureConfig.Target> OVERWORLD_CLOUDSTONE = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.CLOUDSTONE.getDefaultState()));

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "J": {
+      "item": "minecraft:magma_block"
+    },
+    "A": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "N": {
+      "item": "arclight:moonlight_core"
+    }
+  },
+  "pattern": [
+    "JAJ",
+    "ANA",
+    "JAJ"
+  ],
+  "result": {
+    "item": "arclight:heart"
+  }
+}

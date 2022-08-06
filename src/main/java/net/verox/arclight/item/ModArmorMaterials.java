@@ -1,5 +1,6 @@
 package net.verox.arclight.item;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -17,6 +18,16 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.3F,
             () -> {return Ingredient.ofItems(ModItems.ARCLIGHT_INGOT);
     }),
+
+    FROZEN("frozen", 30, new int[]{4, 6, 8, 4}, 25,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.3F,
+            () -> {return Ingredient.ofItems(Blocks.BLUE_ICE);
+            }),
+
+    STEEL("frozen", 30, new int[]{3, 6, 8, 3}, 25,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.2F,
+            () -> {return Ingredient.ofItems(Items.IRON_INGOT);
+            }),
 
     MOONLIGHT("moonlight", 45, new int[]{5, 9, 12, 5}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.3F,

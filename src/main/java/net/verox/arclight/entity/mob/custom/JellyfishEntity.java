@@ -51,7 +51,7 @@ public class JellyfishEntity extends FlyingEntity implements IAnimatable,Monster
         this.movementType = JellyfishEntity.JellyMovementType.CIRCLE;
         this.targetPosition = Vec3d.ZERO;
         this.circlingCenter = BlockPos.ORIGIN;
-        this.experiencePoints = 100;
+        this.experiencePoints = 11;
         this.moveControl = new JellyfishEntity.JellyMoveControl(this);
     }
 

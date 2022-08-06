@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "J": {
+      "item": "minecraft:blue_ice"
+    },
+    "A": {
+      "item": "minecraft:packed_ice"
+    },
+    "N": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "JAJ",
+    "ANA",
+    "JAJ"
+  ],
+  "result": {
+    "item": "arclight:frosted_core"
+  }
+}
