@@ -39,7 +39,7 @@ public class ArclightArmorItem extends ArmorItem implements IAnimatable {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP2 =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.ARCLIGHT,
-                            new StatusEffectInstance(StatusEffects.GLOWING, 100, 0,
+                            new StatusEffectInstance(StatusEffects.LUCK, 100, 0,
                                     false, false)).build();
     public ArclightArmorItem(ArmorMaterial material, EquipmentSlot slot, Item.Settings settings) {
         super(material, slot, settings);
