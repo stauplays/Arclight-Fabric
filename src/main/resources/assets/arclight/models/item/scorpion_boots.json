@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "arclight:item/arclight_boots"
+    "layer0": "arclight:item/scorpion_boots"
   }
 }

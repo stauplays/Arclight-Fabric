@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "arclight:item/arclight_helmet"
+    "layer0": "arclight:item/moonlight_helmet"
   }
 }

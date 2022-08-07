@@ -4,13 +4,13 @@
   "version": "${version}",
 
   "name": "Arclight",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Use nice looking Armors for your battles!",
   "authors": [
     "VeroxUniverse"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/epic-paladins",
+    "sources": "https://github.com/stauplays/Arclight-Fabric"
   },
 
   "license": "MIT License",
