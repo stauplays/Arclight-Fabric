@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "arclight:almandine_ingot"
+    }
+  },
+  "pattern": [
+    "XX ",
+    "X# ",
+    " # "
+  ],
+  "result": {
+    "item": "arclight:almandine_axe"
+  }
+}

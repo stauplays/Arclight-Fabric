@@ -48,6 +48,15 @@ public class ModBlocks {
     public static final Block  ARCLIGHT_BLOCK = registerBlock("arclight_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModGroup.ARCLIGHT_BUILDING);
 
+    public static final Block  JADE_BLOCK = registerBlock("jade_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModGroup.ARCLIGHT_BUILDING);
+
+    public static final Block  MOONLIGHT_BLOCK = registerBlock("moonlight_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModGroup.ARCLIGHT_BUILDING);
+
+    public static final Block  ALMANDINE_BLOCK = registerBlock("almandine_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModGroup.ARCLIGHT_BUILDING);
+
     //MOONWOOD
     public static final Block  MOON_LOG = registerBlock("moon_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG).strength(4f).requiresTool()), ModGroup.ARCLIGHT_BUILDING);

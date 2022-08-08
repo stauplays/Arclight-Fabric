@@ -42,6 +42,7 @@ public class ArclightModClient implements ClientModInitializer {
                 ModItems.STEEL_CHESTPLATE, ModItems.STEEL_HELMET, ModItems.STEEL_LEGGINGS);
 
         GeoItemRenderer.registerItemRenderer(ModItems.ANGEL_SWORD, new AngelSwordRenderer());
+
         GeoItemRenderer.registerItemRenderer(ModItems.MOONLIGHT_GLAIVE, new GlaiveRenderer());
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MOON_DOOR, RenderLayer.getCutout());
@@ -63,5 +64,6 @@ public class ArclightModClient implements ClientModInitializer {
         EntityRendererRegistry.register(EntityTypes.SCORPION, ScorpionRenderer::new);
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BOSS_SPAWNER, RenderLayer.getCutout());
+
     }
 }

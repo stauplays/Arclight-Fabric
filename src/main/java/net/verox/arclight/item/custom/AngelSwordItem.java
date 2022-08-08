@@ -34,4 +34,5 @@ public class AngelSwordItem extends SwordItem implements IAnimatable {
     public AnimationFactory getFactory() {
         return factory;
     }
+
 }

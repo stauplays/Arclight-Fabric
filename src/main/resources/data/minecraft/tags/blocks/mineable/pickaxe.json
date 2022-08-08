@@ -13,6 +13,9 @@
     "arclight:cloudstone_brick_wall",
     "arclight:cloudstone_brick_slab",
     "arclight:cloudstone_brick_stairs",
-    "arclight:almandine_ore"
+    "arclight:almandine_ore",
+    "arclight:almandine_block",
+    "arclight:moonlight_block",
+    "arclight:jade_block"
   ]
 }

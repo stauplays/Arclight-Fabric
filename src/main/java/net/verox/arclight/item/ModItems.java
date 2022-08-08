@@ -11,6 +11,9 @@ import net.verox.arclight.ModGroup;
 import net.verox.arclight.entity.mob.EntityTypes;
 import net.verox.arclight.item.custom.*;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class ModItems {
 
     //CopperTools
@@ -91,6 +94,27 @@ public class ModItems {
 
     public static final Item ARCLIGHT_HOE = registerItem("arclight_hoe",
             new ModHoeItem(ModToolMaterials.ARCLIGHT_TOOL, -4, 0f,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+
+    //AlmandineTools
+    public static final Item ALMANDINE_SWORD = registerItem("almandine_sword",
+            new SwordItem(ModToolMaterials.ALMANDINE_TOOL, 2, -2.4f,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+
+    public static final Item ALMANDINE_PICKAXE = registerItem("almandine_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.ALMANDINE_TOOL, 0, -2.8f,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+
+    public static final Item ALMANDINE_AXE = registerItem("almandine_axe",
+            new ModAxeItem(ModToolMaterials.ALMANDINE_TOOL, 4, -3f,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+
+    public static final Item ALMANDINE_SHOVEL = registerItem("almandine_shovel",
+            new ModShovelItem(ModToolMaterials.ALMANDINE_TOOL, 0, -3f,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
+
+    public static final Item ALMANDINE_HOE = registerItem("almandine_hoe",
+            new ModHoeItem(ModToolMaterials.ALMANDINE_TOOL, -4, 0f,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP)));
 
     //ArclightHalo

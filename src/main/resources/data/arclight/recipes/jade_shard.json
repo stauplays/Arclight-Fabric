@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "arclight:jade_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "arclight:jade_shard"
+  }
+}

@@ -39,7 +39,7 @@ public class MoonlightArmorItem extends ArmorItem implements IAnimatable {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP2 =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.MOONLIGHT,
-                            new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20, 0,
+                            new StatusEffectInstance(StatusEffects.NIGHT_VISION, 500, 0,
                                     false, false)).build();
     public MoonlightArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);

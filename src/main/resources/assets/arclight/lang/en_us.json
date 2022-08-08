@@ -44,6 +44,11 @@
   "item.arclight.moonlight_glaive": "Moonlight Glaive",
   "item.arclight.almandine_shard": "Almandine Shard",
   "item.arclight.almandine_ingot": "Almandine-Copper Alloy",
+  "item.arclight.almandine_pickaxe": "Almandine Pickaxe",
+  "item.arclight.almandine_axe": "Almandine Axe",
+  "item.arclight.almandine_shovel": "Almandine Shovel",
+  "item.arclight.almandine_hoe": "Almandine Hoe",
+  "item.arclight.almandine_sword": "Almandine Sword",
 
   //ArmorItems
   "item.arclight.arclight_helmet": "Arclight Paladin Helmet",
@@ -84,6 +89,9 @@
   //Blocks:
   "block.arclight.arclight_ore": "Arclight Ore",
   "block.arclight.arclight_block": "Block of Arclight",
+  "block.arclight.jade_block": "Block of Jade",
+  "block.arclight.moonlight_block": "Block of Moonlight",
+  "block.arclight.almandine_block": "Block of Almandine",
   "block.arclight.moonlight_ore": "Moonlight Ore",
   "block.arclight.jade_ore": "Jade Ore",
   "block.arclight.almandine_ore": "Almandine Ore",
