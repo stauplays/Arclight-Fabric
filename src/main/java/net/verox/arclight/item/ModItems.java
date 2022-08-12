@@ -285,6 +285,23 @@ public class ModItems {
             new SteelArmorItem(ModArmorMaterials.STEEL, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.UNCOMMON)));
 
+    //AngelArmor
+    public static final Item ANGEL_HELMET = registerItem("angel_helmet",
+            new AngelArmorItem(ModArmorMaterials.ANGEL, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.EPIC)));
+
+    public static final Item ANGEL_CHESTLATE = registerItem("angel_chestplate",
+            new AngelArmorItem(ModArmorMaterials.ANGEL, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.EPIC)));
+
+    public static final Item ANGEL_LEGGINGS = registerItem("angel_leggings",
+            new AngelArmorItem(ModArmorMaterials.ANGEL, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.EPIC)));
+
+    public static final Item ANGEL_BOOTS = registerItem("angel_boots",
+            new AngelArmorItem(ModArmorMaterials.ANGEL, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModGroup.ARCLIGHT_GROUP).rarity(Rarity.EPIC)));
+
     //SpawnAngel
     public static final Item ANGEL_SPAWN_EGG = registerItem("angel_spawn_egg",
             new SpawnEggItem(EntityTypes.ANGEL,0xE1EF05, 0x6FF2FA,

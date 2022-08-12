@@ -41,6 +41,9 @@ public class ArclightModClient implements ClientModInitializer {
         GeoArmorRenderer.registerArmorRenderer(new SteelArmorRenderer(), ModItems.STEEL_BOOTS,
                 ModItems.STEEL_CHESTPLATE, ModItems.STEEL_HELMET, ModItems.STEEL_LEGGINGS);
 
+        GeoArmorRenderer.registerArmorRenderer(new AngelArmorRenderer(), ModItems.ANGEL_CHESTLATE,
+                ModItems.ANGEL_BOOTS, ModItems.ANGEL_HELMET, ModItems.ANGEL_LEGGINGS);
+
         GeoItemRenderer.registerItemRenderer(ModItems.ANGEL_SWORD, new AngelSwordRenderer());
 
         GeoItemRenderer.registerItemRenderer(ModItems.MOONLIGHT_GLAIVE, new GlaiveRenderer());

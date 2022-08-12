@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "arclight:arclight_chestplate"
+    },
+    "F": {
+      "item": "arclight:angel_feather"
+    },
+    "A": {
+      "item": "arclight:arclight_ingot"
+    },
+    "M": {
+      "item": "arclight:moonlight_jellyball"
+    },
+    "C": {
+      "item": "arclight:arclight_core"
+    }
+  },
+  "pattern": [
+    "FCF",
+    "FXF",
+    "MAM"
+  ],
+  "result": {
+    "item": "arclight:angel_chestplate"
+  }
+}

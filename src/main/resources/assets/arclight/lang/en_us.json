@@ -86,6 +86,11 @@
   "item.arclight.steel_leggings": "Almandine Paladin Leggings",
   "item.arclight.steel_boots": "Almandine Paladin Boots",
 
+  "item.arclight.angel_helmet": "Angel Helmet",
+  "item.arclight.angel_chestplate": "Angel Chestplate",
+  "item.arclight.angel_leggings": "Angel Leggings",
+  "item.arclight.angel_boots": "Angel Boots",
+
   //Blocks:
   "block.arclight.arclight_ore": "Arclight Ore",
   "block.arclight.arclight_block": "Block of Arclight",

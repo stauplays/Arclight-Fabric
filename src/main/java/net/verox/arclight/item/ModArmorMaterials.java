@@ -19,6 +19,11 @@ public enum ModArmorMaterials implements ArmorMaterial {
             () -> {return Ingredient.ofItems(ModItems.ARCLIGHT_INGOT);
     }),
 
+    ANGEL("angel", -1, new int[]{9, 15, 20, 9}, 30,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 7.0F, 0.5F,
+            () -> {return Ingredient.ofItems(Items.PHANTOM_MEMBRANE);
+            }),
+
     FROZEN("frozen", 30, new int[]{4, 6, 8, 4}, 25,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2.0F, 0.3F,
             () -> {return Ingredient.ofItems(Blocks.BLUE_ICE);

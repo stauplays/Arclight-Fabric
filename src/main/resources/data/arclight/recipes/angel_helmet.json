@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "arclight:arclight_helmet"
+    },
+    "A": {
+      "item": "arclight:arclight_ingot"
+    },
+    "M": {
+      "item": "arclight:moonlight_jellyball"
+    },
+    "C": {
+      "item": "arclight:arclight_core"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "MXM",
+    "AAA"
+  ],
+  "result": {
+    "item": "arclight:angel_helmet"
+  }
+}
