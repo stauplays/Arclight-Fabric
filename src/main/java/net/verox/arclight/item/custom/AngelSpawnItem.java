@@ -38,29 +38,33 @@ public class AngelSpawnItem extends Item {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        if(!context.getWorld().isClient()) {
+        Block blockBelow = null;
+        if (!context.getWorld().isClient()) {
             BlockPos positionClicked = context.getBlockPos();
             PlayerEntity player = context.getPlayer();
             boolean foundBlock = false;
 
-            for(int i = 0; i <= positionClicked.getY() + 2; i++) {
-                Block blockBelow = context.getWorld().getBlockState(positionClicked.down(i)).getBlock();
+            for (int i = 0; i <= positionClicked.getY() + 2; i++) {
+                blockBelow = context.getWorld().getBlockState(positionClicked.down(i)).getBlock();
 
-                if(isValuableBlock(blockBelow)) {
+                if (isValuableBlock(blockBelow)) {
                     World world = context.getWorld();
                     AngelEntity spawnAngel = EntityTypes.ANGEL.create(world);
-                    spawnAngel.refreshPositionAndAngles((double)positionClicked.getX() + 0.5D, (double)positionClicked.getY()
-                            + 15.05D, (double)positionClicked.getZ() + 0.5D, 0.0F, 0.0F);
+                    spawnAngel.refreshPositionAndAngles((double) positionClicked.getX() + 0.5D, (double) positionClicked.getY()
+                            + 15.05D, (double) positionClicked.getZ() + 0.5D, 0.0F, 0.0F);
                     world.spawnEntity(spawnAngel);
                     break;
+
                 }
             }
         }
-
-        context.getStack().damage(1, context.getPlayer(),
-                (player) -> player.sendToolBreakStatus(player.getActiveHand()));
+        if (isValuableBlock(blockBelow)) {
+            context.getStack().damage(1, context.getPlayer(),
+                    (player) -> player.sendToolBreakStatus(player.getActiveHand()));
+        }
 
         return super.useOnBlock(context);
+
     }
 
     private boolean isValuableBlock(Block block) {
