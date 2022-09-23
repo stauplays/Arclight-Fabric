@@ -115,6 +115,6 @@ public class ModConfiguredFeatures {
 
 
     public static void registerConfiguredFeatures() {
-        System.out.println("Registering ModConfiguredFeatures for " + ArclightMod.MOD_ID);
+        ArclightMod.LOGGER.info("Registering ModConfiguredFeatures for " + ArclightMod.MOD_ID);
     }
 }

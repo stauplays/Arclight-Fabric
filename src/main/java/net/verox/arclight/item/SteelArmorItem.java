@@ -12,6 +12,7 @@ import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import net.verox.arclight.ArclightMod;
 import org.spongepowered.include.com.google.common.collect.ImmutableMap;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -61,7 +62,7 @@ public class SteelArmorItem extends ArmorItem implements IAnimatable {
 
             if(hasCorrectArmorOn(mapArmorMaterial, player)) {
                 addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
-                System.out.println(mapStatusEffect.shouldShowParticles());
+                ArclightMod.LOGGER.debug("SteelArmorItem:evaluateArmorEffects:entry: " + mapStatusEffect.shouldShowParticles());
             }
         }
     }
